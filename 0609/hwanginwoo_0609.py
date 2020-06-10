@@ -10,14 +10,11 @@ print( "이름 : {}".format( data[ 0:3 ] ) )
 print( "전화번호 : {}".format( data[ 3:7 ] + "-" + data[ 7:11 ] + "-" + data[ 11:15 ] ) )
 print( "e-mail : {}".format( data[ 16: ] ) )
 # 3) 두 정수를 입력 받아 합계, 평균을 출력하는 파이썬 스크립트( list 이용 )
-count = 0
 number1 = int( input( " input number1 : " ) )
-count += 1
 number2 = int( input( " input number2 : " ) )
-count += 1
 number = [ number1, number2 ]
 print( "합계 : {}".format(number[0] + number[1] ) )
-print( "평균 : {}".format(number[0] + number[1] / count ) )
+print( "평균 : {}".format(number[0] + number[1] / len(number)  ) )
 
 # 4) 다섯 정수를 입력받아 평균, 편차, 편차제곱, 분산을 출력하는 파이썬 스크립트( list 이용 )
 number1 = int( input( " input number1 : " ) )
